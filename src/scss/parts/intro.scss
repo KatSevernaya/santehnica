@@ -1,0 +1,130 @@
+.intro {
+    height: 427px;
+    background: url('/templates/future/img/express-page-shower/intro-bg-cabin.jpg');
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 1fr;
+   
+
+    .intro-text {
+        grid-row: 1;
+        grid-column: 1;
+        background-color: #272626;
+        height: 427px;
+        width: 320px;
+        color: #fff;
+        
+
+        h3{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 25px;
+            margin-bottom: 8px;
+            font-weight: normal;
+            letter-spacing: -1.6px;
+            font-family: 'Exo 2', sans-serif;
+        }
+        h4{
+           margin-top: 8px;
+            margin-left: 20px;
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        ul{
+            list-style: none;
+            padding: 0 0 0 20px;
+            margin: 0;
+            
+
+            li {
+                
+                display: grid;
+                margin-bottom: 25px;
+                grid-template-rows: 1fr;
+                grid-template-columns: 52px 1fr;
+                
+                img {
+                    grid-row: 1;
+                    grid-column: 1;
+                    margin-right: 17px;
+                    //width: 35px; 
+                    //height: 24px;
+                    align-self: center;
+                   justify-self: center;
+                }
+                p {
+                    grid-row: 1;
+                    grid-column: 2;
+                    margin: 0;
+                    font-size: 15px;
+                    line-height: 18px;
+                    //flex-grow: 1;
+                }
+            }
+        }
+        ul:last-child{
+            margin-bottom: 20px;
+        }
+    }
+    .intro__bg-element{
+        grid-row: 1;
+        grid-column: 2;
+        justify-self: start;
+        //width: auto;
+    }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.intro{
+   
+    background: url('/templates/future/img/express-page-shower/intro-bg-cabin.jpg') center;
+    .intro-text h4{
+        font-size: 18px;
+        margin-top: 5;
+
+    }
+    .intro-text h3{
+        font-size: 22px;
+        letter-spacing: 0;
+        margin-bottom: 5;
+    }
+    .intro-text ul li p {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    
+    .intro__bg-element {
+        display: none;
+    }
+    
+}
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 560px) {
+    .intro{
+        padding: 0;
+        background: #2992C4;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media only screen and (max-width : 380px) {
+    .intro {
+        .intro-text{
+            ul li {
+                margin-right: 15px;
+            }
+         }  
+    }
+    
+}

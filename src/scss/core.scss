@@ -1,0 +1,39 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: 'Lato Regular-custom';
+   
+}
+
+section{
+    padding: 0 100px 0 100px;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    section{
+        padding: 0 calc((100% - 1200px) / 2);
+    }
+}
+@media only screen and (max-width : 1200px) {
+    section{
+        padding: 0 50px;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    section{
+        padding: 0 10px;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+@media only screen and (max-width : 380px) {
+}

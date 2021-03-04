@@ -1,0 +1,21 @@
+.guarantee{
+    background: url('/templates/future/img/express-page-shower/guarantee-bg.jpg') center;
+    background-size: cover;
+    //height: 230px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .guarantee{
+        img{
+            width: 130px; 
+        }
+    }
+}
+

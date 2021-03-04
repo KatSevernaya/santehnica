@@ -1,0 +1,128 @@
+.install-facilities{
+    .install-facilities__list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        //grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        
+        margin: 0;
+        padding: 20px 0;
+
+       
+    }
+
+    .install-facilities__item{
+        display: block;
+        border-left: 1px solid #E4E4E4;
+        text-align: center;
+        padding: 5px 0;
+        justify-self: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        flex-basis: 140px;
+       
+    
+        
+
+        p{
+            margin: 20px 5px 0 5px;
+            a{
+                text-decoration: none;
+                color: #2992C4;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                white-space: nowrap;
+            }
+        }
+    }
+    .active {
+        p{
+            a{
+                color: #000;
+            }
+        }
+        
+        
+    }
+    .install-facilities__item:last-of-type{
+        border-right: 1px solid #E4E4E4;
+    }
+    
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .install-facilities__item{
+        margin-bottom: 10px;
+    }
+    
+}
+@media only screen and (max-width : 886px) {
+    .install-facilities__item:last-child {
+        flex-grow: 0;
+        
+    }
+}
+@media only screen and (max-width : 875px) {
+    .install-facilities__item:nth-of-type(5){
+        border-right: 1px solid #E4E4E4;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .install-facilities .install-facilities__item{
+        p{
+            a{
+                font-size: 11px;
+                line-height: 14px;
+            }
+        }
+        
+    }
+}
+@media only screen and (max-width : 705px) {
+
+    .install-facilities__item:last-child {
+        flex-grow: 1;
+    }
+    .install-facilities__item:nth-of-type(4){
+        border-right: 1px solid #E4E4E4;
+    }
+    .install-facilities__item:nth-of-type(5){
+        border-right: none;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 605px) {
+    .install-facilities__item:nth-of-type(3){
+        border-right: 1px solid #E4E4E4;
+    }
+    .install-facilities__item:nth-of-type(4){
+        border-right: none;
+    }
+
+}
+@media only screen and (max-width : 466px) {
+    .install-facilities__item:nth-of-type(3){
+        border-right: none;
+    }
+    .install-facilities__item:nth-of-type(2){
+        border-right: 1px solid #E4E4E4;
+    }
+    .install-facilities__item:nth-of-type(4){
+        border-right: 1px solid #E4E4E4;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .install-facilities{
+        .install-facilities__item{
+            flex-basis: 130px;
+        }
+    }
+}
